@@ -1,6 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  experimental: {
+    serverComponents: true,
+    outputStandalone: true,
+    runtime: 'edge',
+  },
+  images: {
+    formats: ['image/avif', 'image/webp'],
+  },
+  swcMinify: true
 }
 
 module.exports = nextConfig
