@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "framer-motion": "6.2.9",
-    "next": "12.1.5-canary.4",
+    "next": "file:../nextjs/packages/next",
     "react": "18.0.0",
     "react-dom": "18.0.0"
   },
@@ -21,5 +21,14 @@
     "eslint": "8.12.0",
     "eslint-config-next": "12.1.4",
     "typescript": "4.6.3"
+  },
+  "optionalDependencies": {
+    "@next/swc-linux-x64-gnu": "canary",
+    "@next/swc-win32-x64-msvc": "canary",
+    "@next/swc-darwin-x64": "canary",
+    "@next/swc-darwin-arm64": "canary"
+  },
+  "volta": {
+    "node": "17.9.0"
   }
 }
